@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import heroImage from "@/assets/hero-welding.png";
 
 const BlueprintGrid = () => (
   <svg className="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
@@ -50,32 +51,19 @@ const Hero = () => (
         </motion.div>
 
         <motion.div
-          className="lg:col-span-2 hidden lg:flex items-center justify-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          className="lg:col-span-2 flex items-center justify-center"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          {/* Technical vector illustration */}
-          <svg viewBox="0 0 300 300" className="w-full max-w-sm text-primary/20" fill="none" stroke="currentColor" strokeWidth="0.5">
-            {/* Outer circle */}
-            <circle cx="150" cy="150" r="140" />
-            <circle cx="150" cy="150" r="120" strokeDasharray="4 4" />
-            {/* Cross hairs */}
-            <line x1="150" y1="10" x2="150" y2="290" />
-            <line x1="10" y1="150" x2="290" y2="150" />
-            {/* Weld joint representation */}
-            <rect x="100" y="120" width="100" height="60" rx="2" strokeWidth="1" className="text-primary/30" />
-            <path d="M100 150 L130 135 L145 155 L160 130 L175 160 L190 140 L200 150" strokeWidth="1.5" className="text-primary/50" />
-            {/* Dimension lines */}
-            <line x1="100" y1="195" x2="200" y2="195" strokeWidth="0.5" className="text-muted-foreground/30" />
-            <line x1="100" y1="190" x2="100" y2="200" strokeWidth="0.5" className="text-muted-foreground/30" />
-            <line x1="200" y1="190" x2="200" y2="200" strokeWidth="0.5" className="text-muted-foreground/30" />
-            {/* Corner marks */}
-            <path d="M30 30 L50 30 M30 30 L30 50" strokeWidth="0.8" className="text-primary/40" />
-            <path d="M270 30 L250 30 M270 30 L270 50" strokeWidth="0.8" className="text-primary/40" />
-            <path d="M30 270 L50 270 M30 270 L30 250" strokeWidth="0.8" className="text-primary/40" />
-            <path d="M270 270 L250 270 M270 270 L270 250" strokeWidth="0.8" className="text-primary/40" />
-          </svg>
+          <div className="relative rounded-lg overflow-hidden shadow-2xl">
+            <img
+              src={heroImage}
+              alt="Welding professional at work in a heavy fabrication facility"
+              className="w-full h-auto object-cover rounded-lg"
+            />
+            <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-foreground/10" />
+          </div>
         </motion.div>
       </div>
     </div>
