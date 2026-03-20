@@ -15,7 +15,7 @@ const IndustryExperience = () => {
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <section className="py-20 md:py-28 bg-secondary">
+    <section id="clients" className="py-20 md:py-28 bg-secondary">
       <div className="container" ref={ref}>
         <motion.div
           className="max-w-2xl mb-12"
@@ -24,7 +24,7 @@ const IndustryExperience = () => {
           transition={{ duration: 0.5, ease: [0.2, 0, 0, 1] }}
         >
           <p className="section-label mb-3">Track Record</p>
-          <h2 className="section-heading">Industry Experience</h2>
+          <h2 className="section-heading">Clients</h2>
         </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
