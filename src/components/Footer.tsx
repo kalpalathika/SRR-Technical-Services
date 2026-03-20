@@ -13,7 +13,7 @@ const Footer = () => (
       <ul className="flex flex-wrap items-center gap-6">
         {footerLinks.map((l) => (
           <li key={l.href}>
-            <a href={l.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a href={l.href} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               {l.label}
             </a>
           </li>
