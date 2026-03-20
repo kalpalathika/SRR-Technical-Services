@@ -18,7 +18,7 @@ const Expertise = () => {
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <section id="expertise" className="py-20 md:py-28 bg-muted/40">
+    <section id="expertise" className="py-20 md:py-28 bg-secondary">
       <div className="container" ref={ref}>
         <motion.div
           className="max-w-2xl mb-12"

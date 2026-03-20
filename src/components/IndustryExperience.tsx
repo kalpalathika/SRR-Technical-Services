@@ -15,7 +15,7 @@ const IndustryExperience = () => {
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <section className="py-20 md:py-28 bg-muted/40">
+    <section className="py-20 md:py-28 bg-secondary">
       <div className="container" ref={ref}>
         <motion.div
           className="max-w-2xl mb-12"
