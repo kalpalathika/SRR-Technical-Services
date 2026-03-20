@@ -7,7 +7,7 @@ const footerLinks = [
 ];
 
 const Footer = () => (
-  <footer className="border-t border-border py-10">
+  <footer className="border-t border-border py-10 bg-primary text-primary-foreground">
     <div className="container flex flex-col md:flex-row items-center justify-between gap-6">
       <p className="text-sm text-muted-foreground">© SRR Technical Services</p>
       <ul className="flex flex-wrap items-center gap-6">
