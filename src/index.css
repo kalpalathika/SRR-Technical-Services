@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 215 45% 15%;
+    --background: 0 0% 100%;
+    --foreground: 215 45% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 45% 15%;
+    --card-foreground: 215 45% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 45% 15%;
+    --popover-foreground: 215 45% 12%;
 
-    --primary: 215 45% 25%;
-    --primary-foreground: 210 20% 98%;
+    --primary: 215 50% 22%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 15% 90%;
-    --secondary-foreground: 215 45% 15%;
+    --secondary: 215 20% 96%;
+    --secondary-foreground: 215 45% 12%;
 
-    --muted: 215 15% 94%;
-    --muted-foreground: 215 15% 40%;
+    --muted: 215 15% 96%;
+    --muted-foreground: 215 12% 45%;
 
-    --accent: 24 75% 50%;
+    --accent: 24 80% 52%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 20% 90%;
-    --input: 215 20% 90%;
-    --ring: 215 45% 25%;
+    --border: 215 20% 91%;
+    --input: 215 20% 91%;
+    --ring: 215 50% 22%;
 
     --radius: 0.75rem;
 
@@ -45,12 +45,12 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --shadow-card: 0 0 0 1px rgba(0,0,0,0.03), 0 2px 4px rgba(0,0,0,0.05), 0 12px 24px -12px rgba(0,0,0,0.05);
-    --shadow-card-hover: 0 0 0 1px rgba(0,0,0,0.05), 0 10px 30px -10px rgba(0,0,0,0.12);
+    --shadow-card: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.06);
+    --shadow-card-hover: 0 4px 20px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.06);
   }
 
   .dark {
-    --background: 215 45% 8%;
+    --background: 215 45% 7%;
     --foreground: 210 20% 98%;
     --card: 215 45% 10%;
     --card-foreground: 210 20% 98%;
@@ -62,7 +62,7 @@
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 24 75% 50%;
+    --accent: 24 80% 52%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
