@@ -14,7 +14,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md border-b border-border/50">
       <div className="container flex items-center justify-between h-16">
         <a href="#home" className="flex items-center">
           <img src={logo} alt="SRR Technical Service" className="h-10 w-auto" />

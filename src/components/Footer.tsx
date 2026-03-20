@@ -1,5 +1,3 @@
-import logo from "@/assets/logo.png";
-
 const footerLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
@@ -11,10 +9,7 @@ const footerLinks = [
 const Footer = () => (
   <footer className="border-t border-border py-10 bg-primary text-primary-foreground">
     <div className="container flex flex-col md:flex-row items-center justify-between gap-6">
-      <div className="flex items-center gap-3">
-        <img src={logo} alt="SRR Technical Service" className="h-8 w-auto brightness-0 invert" />
-        <p className="text-sm text-primary-foreground/70">© SRR Technical Services</p>
-      </div>
+      <p className="text-sm text-primary-foreground/70">© SRR Technical Services</p>
       <ul className="flex flex-wrap items-center gap-6">
         {footerLinks.map((l) => (
           <li key={l.href}>
